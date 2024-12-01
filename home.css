@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  Arial, sans-serif;
+    color: #000;
+    background: url(Image/Image/home-backgrund.webp) no-repeat center center/cover;
+}
+
+.background {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 2.5rem 0;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.brand h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.link {
+    display: flex;
+    gap: 15px;
+}
+
+.cart {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    align-self: center;
+}
+
+.reservation {
+    text-decoration: none;
+    background-color: #BB946E;
+    color: #fff;
+    padding: 1.25rem 2rem;
+    font-size: 1rem;
+}
+
+.reservation:hover {
+    background-color: #979797;
+}
+
+.background-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.background-content h1 {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    width: 1120px;
+    height: 288px;
+}
