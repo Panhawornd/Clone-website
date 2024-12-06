@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Joanna Nova';
+    src: url(Fonts/Joanna\ Nova\ W06\ Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Joanna Nova';
+    src: url(Fonts/Joanna\ Nova\ W06\ Bold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(Fonts/Neue\ Montreal\ Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(Fonts/Neue\ Montreal\ Bold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -6,50 +33,56 @@
 }
 
 body {
-    font-family:  Arial, sans-serif;
+    font-family: 'Neue Montreal', sans-serif;
+    font-weight: normal;
     color: #000;
-    background: url(Image/Image/home-backgrund.webp) no-repeat center center/cover;
+    line-height: 1.6;
 }
 
 .background {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(Image/background.jpg) no-repeat center center/cover;
+    position: relative;
 }
 
 .header {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 2.5rem 0;
-    color: #fff;
+    z-index: 2;
 }
 
-.navbar ul {
+.header .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.navbar a {
+.header .navbar ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: normal;
 }
 
-.brand h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
+.header .brand img {
+    width: 128px;
+    height: 102px;
 }
 
-.link {
+.header .link {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .cart {
@@ -59,31 +92,330 @@ body {
     align-self: center;
 }
 
-.reservation {
-    text-decoration: none;
-    background-color: #BB946E;
+
+.header .reservation {
+    background-color: #bb946e;
     color: #fff;
     padding: 1.25rem 2rem;
-    font-size: 1rem;
+    text-decoration: none;
+    font-weight: normal;
 }
 
 .reservation:hover {
     background-color: #979797;
 }
 
+main {
+    margin: 0;
+    padding: 0;
+}
+
 .background-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    max-width: 1120px;
     text-align: center;
-    height: 100vh;
 }
 
 .background-content h1 {
-    color: #fff;
     font-size: 6rem;
     font-weight: bold;
-    padding: 1rem 2rem;
-    width: 1120px;
-    height: 288px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    max-width: 1120px;
+    margin: auto;
+    font-family: 'Joanna Nova', Times, serif;
+}
+
+.reservation-link {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    writing-mode: vertical-lr;
+    text-align: center;
+    background-color: #c3a07c;
+    color: white;
+    padding: 20px 32px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    border: 1px solid #b0886a;
+    z-index: 1000;
+    height: 230px;
+    width: 64px;
+    padding-left: 20px;
+}
+
+.instagram {
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    transform: rotate(-90deg) translateX(50%);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    z-index: 2;
+    color: #fff;
+}
+
+.instagram a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;;
+}
+
+.circle-container {
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+    width: 120px;
+    height: 120px;
+    z-index: 3;
+}
+
+.circle-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #c89c75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-button span {
+    position: absolute;
+    width: 200%; /* Wider to accommodate full text rotation */
+    height: 200%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: rotateText 10s linear infinite;
+    font-family: 'Joanna Nova', serif;
+    font-weight: normal;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.shopify-content {
+    border: 0 solid #e2e8f0;
+    line-height: 1.5;
+    font-family: 'Neue Montreal', sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+.content {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    position: relative;
+}
+
+.shopify-text {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.est {
+    font-family: 'Joanna Nova', serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.text {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-family: 'Joanna Nova', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.bull-head-container {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    opacity: .1;
+}
+
+.bull-head img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-bottom: 16rem;
+}    
+
+.food-width {
+    width: 50%;
+    max-width: 42rem;
+    margin-top: 2.5rem;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.food-container {
+    width: 100%;
+    position: relative;
+}
+
+.food-image {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    padding-top: 150%;
+}
+
+.food {
+    width: 100%;
+    left: 2rem;
+    top: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.food-text-con {
+    top: 44%;
+    right: -26%;
+    position: absolute;
+    
+}
+
+.food-text {
+    font-size: 6rem;
+    font-family: 'Joanna Nova', serif;
+    font-weight: 600;
+    transform: rotate(90deg);
+}
+
+.menu-width {
+    padding: 10rem;
+    width: 50%;
+    position: relative;
+}
+
+.menu-container {
+    max-width: none;
+    z-index: 30;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    margin-bottom: 2.5rem;
+}
+
+.menu-bold {
+    font-size: 4rem;
+    line-height: 1;
+    font-family: 'Joanna Nova', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.menu-text {
+    text-align: center;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+}
+
+.view-btn-container {
+    text-align: center;
+}
+
+.view-btn {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #303e4b;
+    color: #303e4b;
+    padding: 1.25rem 1.75rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.view-menu-label {
+    display: block;
+}
+
+.arrow {
+    display: block;
+}
+
+.view-btn:hover {
+    background-color: #303e4b;
+    color: #fff;
+}
+
+.arrow:hover {
+    
+}
+
+.room-width {
+    padding-bottom: 3.5rem;
+}
+
+.room-container {
+    max-width: 36rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.room-text {
+    font-size: 5rem;
+    font-family: 'Joanna Nova', serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+
+.room {
+    position: relative;
+    display: inline-block;
+}
+
+.room-detail {
+    text-align: center;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+}
+
+.room-detail p {
+    margin-bottom: 1.5rem;
 }

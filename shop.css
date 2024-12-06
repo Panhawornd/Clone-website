@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  Arial, sans-serif;
+    color: #000;
+    height: 100vh;  /* Added to ensure the background color covers the entire viewport */
+    width: 100vw; /* Added to ensure the background color covers the entire viewport */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 0;
+    background-color: #275a5a;
+    color: #fff;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.brand {
+    padding-right: 10em;
+}
+.brand img {
+    height: 102.25px;
+    width: 128px;
+
+}
+
+.cart-reservations a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.reservation {
+    background-color: #BB946E;
+    padding: 1.25rem 2rem;
+    font-size: 1rem;
+}
+
+.reservation:hover {
+    background-color: #979797;
+}
+
+.background-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+    height: 687.44px;
+    background-color: #275a5a;
+}
+
+.background-content h1 {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-content {
+    padding-top: 3em;
+    padding-right: 110em;
+    padding-bottom: 1em;
+    color: #fff;
+    writing-mode: vertical-lr;
+}
+.footer-content i {
+    font-size: large;
+}
+.footer-content a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transform: translateX(3);
+}
+.footer-content a:hover {
+    color: #979797;
+}
+.footer-content a:visited {
+    color: #fff;
+}
+.arrow {
+    padding-top: 2em;
+}
+
+#body {
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    /* font-size: 20px; */
+    display: flex;
+    flex-direction: column;
+}
+.body-header {
+    background-color: white;
+    text-align: center;
+    font-family: serif;
+    padding: 4em 0 0 2em;
+    font-size: 24px;
+    font-weight: lighter;
+}
+.category-list {
+    margin: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.category-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.category-list a {
+    text-decoration: none; /* Removes underline */
+    color: #6b6b6b; /* Default gray color */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease; /* Smooth hover effect */
+    position: relative; /* Needed for `.dot` positioning */
+}
+
+.category-list a:hover {
+    color: black; /* Changes text color to black on hover */
+}
+
+.category-list a:visited .dot {
+    display: inline-block; /* Makes the dot visible only when the link is visited */
+}
+
+.category-list a .dot {
+    display: none; /* Hides the dot by default */
+    width: 6px;
+    height: 6px;
+    background-color: #6b6b6b;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.category-list .count {
+    margin-left: 8px;
+    font-weight: bold;
+}
+.content {
+    height: 2000px; /* For scrollable effect */
+    padding: 20px;
+}
+
+/* Ensure the link stays on top of all content */
+.reservation-link {
+    position: fixed;
+    top: 50%; /* Vertically centered */
+    right: 0; /* Align to the right edge */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    writing-mode: vertical-lr; /* Display text vertically */
+    text-align: center;
+    background-color: #c3a07c; /* Button background color */
+    color: white; /* Text color */
+    padding: 20px 32px; /* Space around the text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #b0886a; /* Border for styling */
+    z-index: 1000; /* Ensure it is on top of other elements */
+    height: 230px;
+    width: 64px;
+}
+
+/* Hover effect for the reservation link */
+.reservation-link:hover {
+    background-color: #b0886a; /* Slightly darker background */
+    color: white; /* Maintain text color */
+}
+
+.image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    position: relative;
+    
+}
+.book {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    /* align-content: center; */
+    height: 746.66px;
+    width: 1120px;
+    margin-top: 3em;
+    display: block;
+}
+img {
+    width: 746px;
+    height: 746px;
+}
+.text1 {
+    text-align: center;
+    width: 560px;
+    height: 346px;
+    background-color: #2b3a41;
+    color: white;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.text1 h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+}
+.parg {
+    font-size: 16px;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    background-color: #BB946E;
+    height: 66px;
+    width: 161.89px;
+    padding: 20px 28px;
+    gap: 0.5em;
+    align-items: center;
+    justify-items: center;
+}
+.button a {
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #2b3a41;
+    cursor: pointer;
+    border: solid 1px white;
+}
+.button a:visited {
+    color: white;
+}
+.price {
+    position: absolute;
+    top: 6%;
+    left: 21%;
+    font-size: 16px;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #BB946E;
+    text-align: center;
+    padding-top: 2em;
+    margin: 20px 0px 0px 20px;
+}
+/* image2 */
+.image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    position: relative;
+    padding-left: 50em;
+    
+}
+.small-bottle {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    /* align-content: center; */
+    height: 746.66px;
+    width: 1120px;
+    margin-top: 3em;
+    display: block;
+}
+
+.text2 {
+    text-align: center;
+    width: 560px;
+    height: 346px;
+    background-color: #2b3a41;
+    color: white;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 34%;
+    transform: translate(-50%, -50%);
+}
+.text2 h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+}
+.parg {
+    font-size: 16px;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    background-color: #BB946E;
+    height: 66px;
+    width: 161.89px;
+    padding: 20px 28px;
+    gap: 0.5em;
+    align-items: center;
+    justify-items: center;
+}
+.button a {
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #2b3a41;
+    cursor: pointer;
+    border: solid 1px white;
+}
+.button a:visited {
+    color: white;
+}
+.price2 {
+    position: absolute;
+    top: 6%;
+    right: 22%;
+    font-size: 16px;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #BB946E;
+    text-align: center;
+    padding-top: 2em;
+    margin: 20px 0px 0px 20px;
+}
+/*image3*/
+.image3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    position: relative;
+    
+}
+.alot-of-bottle {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    /* align-content: center; */
+    height: 746.66px;
+    width: 1120px;
+    margin-top: 3em;
+    display: block;
+}
+img {
+    width: 746px;
+    height: 746px;
+}
+.text3 {
+    text-align: center;
+    width: 560px;
+    height: 346px;
+    background-color: #2b3a41;
+    color: white;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 76%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.text3 h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+}
+.parg3 {
+    font-size: 16px;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    background-color: #BB946E;
+    height: 66px;
+    width: 161.89px;
+    padding: 20px 28px;
+    gap: 0.5em;
+    align-items: center;
+    justify-items: center;
+}
+.button a {
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #2b3a41;
+    cursor: pointer;
+    border: solid 1px white;
+}
+.button a:visited {
+    color: white;
+}
+.price3 {
+    position: absolute;
+    top: 6%;
+    left: 21%;
+    font-size: 16px;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #BB946E;
+    text-align: center;
+    padding-top: 2em;
+    margin: 20px 0px 0px 20px;
+}
+/*image4*/
+.image4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    position: relative;
+    padding-left: 50em;
+    
+}
+.voucher {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    /* align-content: center; */
+    height: 746.66px;
+    width: 1120px;
+    margin-top: 3em;
+    display: block;
+}
+.voucher img {
+    height: 467.39px;
+    width: 746px;
+}
+.text4 {
+    text-align: center;
+    width: 560px;
+    height: 346px;
+    background-color: #2b3a41;
+    color: white;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    right: 34%;
+    transform: translate(-50%, -50%);
+}
+.text4 h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+}
+.parg {
+    font-size: 16px;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    background-color: #BB946E;
+    height: 66px;
+    width: 161.89px;
+    padding: 20px 28px;
+    gap: 0.5em;
+    align-items: center;
+    justify-items: center;
+}
+.button a {
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #2b3a41;
+    cursor: pointer;
+    border: solid 1px white;
+}
+.button a:visited {
+    color: white;
+}
