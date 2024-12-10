@@ -111,16 +111,13 @@ body {
 }
 
 .head-logo {
-    width: 8rem;
-    flex-shrink: 0;
-    display: block;
+    font-family: 'Joanna Nova', serif;
+    font-weight: normal;
+    font-size: 3.1rem;
     cursor: pointer;
-}
-
-.svg {
-    /* display: block; */
-    vertical-align: middle;
-    overflow: hidden;
+    line-height: 0.7;
+    text-align: center;
+    text-decoration: none;
     color: #fff;
 }
 
@@ -815,7 +812,7 @@ main {
 }
 
 .insta-con {
-    width: 100rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -993,12 +990,6 @@ main {
     margin-bottom: 2.5rem;
     margin-left: auto;
     margin-right: auto;
-}
-
-.footer-logo {
-    display: block;
-    color: inherit;
-    text-decoration: inherit;
 }
 
 .footer-ul {
